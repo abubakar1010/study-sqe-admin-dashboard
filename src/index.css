@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
+.josefin-slab-eka {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-size: medium;
+}
+@plugin "daisyui" {
+  themes: none;
+}
+
+@plugin "daisyui/theme" {
+  name: "kindDropTheme";
+  default: true;
+  --color-primary: #dcdcdc;
+  --color-accent: #b39294;
+}
+
+.dashboard-card {
+  @apply bg-white text-center p-5 rounded-2xl space-y-3 shadow-2xs
+         hover:bg-accent hover:text-white hover:shadow-2xl
+         border-[#ddd] border-2 border-dotted sm:w-[400px] h-[150px] flex items-center justify-center flex-col;
+}
